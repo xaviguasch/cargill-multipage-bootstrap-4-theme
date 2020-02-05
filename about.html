@@ -176,9 +176,69 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">testimonials</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                    modi.
+                  </p>
+                  <footer class="blockquote-footer">
+                    John Doe From
+                    <cite title="Company 1">Company 1</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                    modi.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sam Smith From
+                    <cite title="Company 1">Company 2</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                    modi.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Megan Williams From
+                    <cite title="Company 1">Company 3</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Cargill</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -204,6 +264,12 @@
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear())
+
+      $('.slider').slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      })
     </script>
   </body>
 </html>
